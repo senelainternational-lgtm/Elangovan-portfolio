@@ -1,0 +1,4 @@
+.fade{animation:lf .45s ease}@keyframes lf{from{opacity:.4}to{opacity:1}}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+.sec-title{font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.1;letter-spacing:-.01em}
+:lang(ta) .sec-title,:lang(ta) h1{font-family:'Noto Sans Tamil',sans-serif;font-weight:600;letter-spacing:0}

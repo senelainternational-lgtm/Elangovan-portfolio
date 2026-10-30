@@ -1,0 +1,10 @@
+.about{padding:120px 0;background:var(--paper)}.about-h{margin-bottom:64px}
+.ab-sec{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;margin-bottom:96px;align-items:start}
+.ab-sec:has(.ab-img){grid-template-columns:.8fr 1.2fr}.ab-sec.flip:has(.ab-img){grid-template-columns:1.2fr .8fr}.ab-sec.flip .ab-img{order:2}
+.ab-img{aspect-ratio:3/4;overflow:hidden;background:var(--ink2);position:sticky;top:100px}.ab-img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform .8s}.ab-img:hover img{transform:scale(1.04)}
+.ab-text{max-width:680px;display:grid;gap:18px}.ab-sec:not(:has(.ab-img)) .ab-text{margin-left:clamp(0px,12vw,180px)}
+.ab-text h3{font-family:var(--serif);font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.15;font-weight:600;padding-left:18px;border-left:3px solid var(--gold)}
+.ab-text p{color:white}
+.ab-text .about-ambition{margin:0;padding:0;border:0;color:white;font:inherit;line-height:inherit}
+:lang(ta) .ab-text h3{font-family:'Noto Sans Tamil',sans-serif;font-style:normal;font-size:clamp(1.3rem,2.6vw,1.8rem)}
+@media(max-width:900px){.ab-sec,.ab-sec:has(.ab-img),.ab-sec.flip:has(.ab-img){grid-template-columns:1fr;gap:28px;margin-bottom:64px}.ab-img{position:static;max-width:420px}.ab-sec.flip .ab-img{order:0}.ab-sec:not(:has(.ab-img)) .ab-text{margin-left:0}}

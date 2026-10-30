@@ -1,0 +1,8 @@
+:root{--ink:#0f1a2b;--ink2:#17263d;--ivory:#f4efe6;--paper:#fbf8f2;--gold:#b8924a;--gold2:#d8b878;--mute:#5d6676;--serif:'Cormorant Garamond',Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Inter','Noto Sans Tamil',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+:lang(ta){line-height:1.9;word-break:normal;overflow-wrap:anywhere}
+img,video{max-width:100%;display:block}a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+button{font:inherit;cursor:pointer}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
