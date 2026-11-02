@@ -17,7 +17,7 @@ export default function Hero({t}){
     </div>
     <motion.div className="hero-img" initial={rm?false:{clipPath:'inset(0 0 100% 0)'}} animate={{clipPath:'inset(0 0 0% 0)'}} transition={{duration:1.2,delay:.3,ease:[.7,0,.2,1]}}
       onMouseMove={e=>{const r=e.currentTarget.getBoundingClientRect();setMv({x:((e.clientX-r.left)/r.width-.5)*10,y:((e.clientY-r.top)/r.height-.5)*10})}} onMouseLeave={()=>setMv({x:0,y:0})}>
-      {bad?<div className="ph" role="img" aria-label={h.alt}><span>Portrait placeholder</span><small>public/assets/images/Elangovan-md-home-cutout.png</small></div>
-      :<img src="/assets/images/Elangovan-md-home-cutout.png" alt={h.alt} onError={()=>setBad(true)} style={{'--portrait-x':`${mv.x}px`,'--portrait-y':`${mv.y}px`}}/>}
+      {bad?<div className="ph" role="img" aria-label={h.alt}><span>Portrait placeholder</span><small>public/assets/images/elangovan-hero-dark.png</small></div>
+      :<img src="/assets/images/elangovan-hero-dark.png" alt={h.alt} onError={()=>setBad(true)} style={{'--portrait-x':`${mv.x}px`,'--portrait-y':`${mv.y}px`}}/>}
     </motion.div></div></section>);
 }
